@@ -22,4 +22,3 @@ argparse
 blinker
 pymongo
 python-dateutil
-wsgiref
