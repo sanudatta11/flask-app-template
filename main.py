@@ -1,16 +1,9 @@
-# -*- encoding: utf-8 -*-
-"""
-Python Aplication Template
-Licence: GPLv3
-"""
+from flask import Flask
+app = Flask(__name__)
 
-import os
-from app import app
-
-
-#----------------------------------------
-# launch
-#----------------------------------------
+@app.route('/')
+def hello_world():
+  return 'Hello, World!'
 
 if __name__ == '__main__':
   app.run()
